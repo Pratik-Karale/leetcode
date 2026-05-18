@@ -8,8 +8,6 @@ class Solution:
                 myMap[nums[i]]+=1
             else:
                 myMap[nums[i]]=1
-        arr1=[]
-        for n,f in myMap.items():
-            arr1.append((f,n))
-        arr1=sorted(arr1)
+        
+        arr1=sorted(map(lambda x:(x[1],x[0]),myMap.items()))
         return list(map(lambda t:t[1],arr1[-k:]))
