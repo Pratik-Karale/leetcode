@@ -14,11 +14,8 @@ class Solution:
                 arr.append(st)
             elif(st in closing):
                 # print(arr)
-                if(len(arr)):
-                    if(arr[-1]==bracks[st]):
-                        arr.pop()
-                    else:
-                        return False
+                if(len(arr) and arr[-1]==bracks[st]):
+                    arr.pop()
                 else:
                     return False
         if(len(arr)):
