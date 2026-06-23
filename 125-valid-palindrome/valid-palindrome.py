@@ -4,11 +4,10 @@ class Solution:
         for c in s:
             if(c.upper()!=c.lower() or c in "1234567890"):
                 st.append(c.lower())
-        s="".join(st)
         a=0
-        b=len(s)-1
+        b=len(st)-1
         while(a<=b):
-            if(s[a]!=s[b]):
+            if(st[a]!=st[b]):
                 return False
             a+=1
             b-=1
