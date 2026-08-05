@@ -9,7 +9,6 @@ class Solution:
             return head
         prev=None
         curr=head
-        print(prev,curr,curr.next)
         while curr:
             tmp=curr.next
             curr.next=prev
