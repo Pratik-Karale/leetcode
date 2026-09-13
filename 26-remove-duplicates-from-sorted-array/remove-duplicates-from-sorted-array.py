@@ -5,11 +5,11 @@ class Solution:
         i=0
         j=0
         while i < n:
-            if(nums[i] not in nums[:j]):
+            if(nums[i]!=nums[j]):
                 # uni.add(nums[i])
-                nums[j]=nums[i]
                 j+=1
+                nums[j]=nums[i]
             else:
                 i+=1
 
-        return j
+        return j+1
