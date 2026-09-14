@@ -1,8 +1,8 @@
 class Solution:
-    def calPoints(self, operations: List[str]) -> int:
+    def calPoints(self, ops: List[str]) -> int:
         res=[]
-        ops=operations
-        for i in range(len(operations)):
+        # ops=operations
+        for i in range(len(ops)):
             if ops[i]=='+':
                 res.append(res[len(res)-2]+res[len(res)-1])
             elif ops[i]=='D':
